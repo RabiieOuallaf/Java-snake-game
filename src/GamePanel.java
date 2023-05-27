@@ -52,6 +52,10 @@ public class GamePanel extends JPanel implements ActionListener {
                 if(i == 0) {
                     g.setColor(Color.green);
                     g.fillRect(x[i],y[i],UNIT_SIZE, UNIT_SIZE);
+                }else if(i >= 10){
+                    g.setColor(new Color(45,180,0));
+                    g.setColor(new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255)));
+                    g.fillRect(x[i],y[i],UNIT_SIZE, UNIT_SIZE);
                 }else {
                     g.setColor(new Color(45,180,0));
                     g.fillRect(x[i],y[i],UNIT_SIZE, UNIT_SIZE);
